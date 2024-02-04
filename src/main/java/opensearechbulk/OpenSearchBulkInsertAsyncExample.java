@@ -60,10 +60,10 @@ public class OpenSearchBulkInsertAsyncExample {
 
         // Add documents to the BulkProcessor
         bulkProcessor.add(new IndexRequest("index_1")
-                .id("1")
+                .id("9")
                 .source(document1, XContentType.JSON));
         bulkProcessor.add(new IndexRequest("index_900")
-                .id("2")
+                .id("10")
                 .source(document2, XContentType.JSON));
 
         // Optionally, wait for the bulk processing to complete
